@@ -16,7 +16,6 @@
         <scala.version>2.13.0</scala.version>
     </properties>
 
-
     <dependencies>
         <!-- scala-maven-plugin determines the Scala version to use from this dependency -->
         <dependency>
@@ -31,7 +30,19 @@
             <artifactId>spark-core_2.12</artifactId>
             <version>2.4.3</version>
         </dependency>
-
+        <!-- https://mvnrepository.com/artifact/org.apache.spark/spark-sql -->
+        <dependency>
+            <groupId>org.apache.spark</groupId>
+            <artifactId>spark-sql_2.12</artifactId>
+            <version>2.4.3</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.spark/spark-mllib -->
+        <dependency>
+            <groupId>org.apache.spark</groupId>
+            <artifactId>spark-mllib_2.12</artifactId>
+            <version>2.4.3</version>
+            <scope>runtime</scope>
+        </dependency>
 
     </dependencies>
 
