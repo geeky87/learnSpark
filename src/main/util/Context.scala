@@ -10,6 +10,7 @@ trait Context {
 
    lazy val sparkSession = SparkSession.builder()
      .config(sparkConf)
+     .enableHiveSupport()
      .getOrCreate()
 
 
